@@ -24,7 +24,10 @@ blog_container_recreate: "no"
 blog_container_restart_policy: "always"
 blog_container_state: "started"
 blog_container_port: '2368'
+blog_container_labels: {}
 blog_container_data: "/var/lib/ghost/content"
+blog_container_ports: 
+  - "{{ blog_bind_addr }}:{{ blog_bind_port }}:{{ blog_container_port }}"
 
 # Environment variables settings
 blog_env_url: "{{ blog_url }}"

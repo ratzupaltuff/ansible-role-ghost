@@ -17,8 +17,8 @@
     env_file: "{{ blog_path_env }}"
     image: "{{ blog_container_image }}"
     name: "{{ blog_container_name }}"
-    ports:
-      - "{{ blog_bind_addr }}:{{ blog_bind_port }}:{{ blog_container_port }}"
+    ports: "{{ blog_container_ports }}"
+    labels: "{{ blog_container_labels }}"
     pull: "{{ blog_container_pull }}"
     recreate: "{{ blog_container_recreate }}"
     restart_policy: "{{ blog_container_restart_policy }}"
