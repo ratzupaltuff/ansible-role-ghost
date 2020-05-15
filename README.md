@@ -13,6 +13,15 @@ Role Variables
 
 Please check [default variables](./defaults/main.yml).
 
+You can add your email config as follows:
+```
+blog_env_extra: 
+  mail__transport: SMTP
+  mail__from: "'Example Blog' <info@example.com>"
+  mail__options__host: 127.0.0.1
+  mail__options__port: 2525
+```
+
 License
 -------
 
