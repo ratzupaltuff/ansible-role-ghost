@@ -29,7 +29,7 @@ blog_container_data: "/var/lib/ghost/content"
 # Environment variables settings
 blog_env_url: "{{ blog_url }}"
 # User defined variable settings:
-blog_env_extra: []
+blog_env_extra: {}
 
 # Listen settings
 blog_bind_addr: '127.0.0.1'
